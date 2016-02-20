@@ -31,10 +31,10 @@ describe MorseCode do
 	 expect(result).to eq %w(.... ..)
   end
 
-  it 'should take "go" and return ["--", "---"]' do
+  it 'should take "go" and return ["--.", "---"]' do
 	 morse = MorseCode.new
 	 result = morse.letters_to_morse("go")
-	 expect(result).to eq ["--", "---"]
+	 expect(result).to eq ["--.", "---"]
   end
 end
 
