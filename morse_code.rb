@@ -7,4 +7,5 @@ class MorseCode
 		false
 	 end
   end
+
 end
