@@ -1,3 +1,4 @@
+require_relative './morse_code'
 describe MorseCode do
 
   it 'should take a string input' do
