@@ -9,6 +9,13 @@ class MorseCode
   end
 
   def split_input(input)
-	 ["h", "e", "l", "l", "o"]
+	 string = input_check(input)
+	 if string == true
+		letters = input.split("")
+	 else
+		puts "please input a string!"
+	 end
+	 letters
   end
+
 end
