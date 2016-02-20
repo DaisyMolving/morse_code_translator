@@ -36,5 +36,11 @@ describe MorseCode do
 	 result = morse.letters_to_morse("go")
 	 expect(result).to eq ["--.", "---"]
   end
+
+  it 'should take "go" and return "--./---"' do
+	 morse = MorseCode.new
+	 result = morse.words_translated("go")
+	 expect(result).to eq "--./---"
+  end
 end
 
