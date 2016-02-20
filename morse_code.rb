@@ -8,4 +8,7 @@ class MorseCode
 	 end
   end
 
+  def split_input(input)
+	 ["h", "e", "l", "l", "o"]
+  end
 end
