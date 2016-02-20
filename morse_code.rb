@@ -1,6 +1,6 @@
 class MorseCode
 
-  def input
+  def input_check(input)
 	 
   end
 end
