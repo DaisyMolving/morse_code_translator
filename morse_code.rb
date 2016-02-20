@@ -10,7 +10,7 @@ class MorseCode
 
   def split_input(input)
 	 string = input_check(input)
-	 if string == true
+	 if string 
 		letters = input.split("")
 	 else
 		puts "please input a string!"

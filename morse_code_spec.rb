@@ -24,4 +24,11 @@ describe MorseCode do
 	 result = morse.split_input("good")
 	 expect(result).to eq %w(g o o d)
   end
+
+  it 'should take "hi" and return ["....", ".."]' do
+	 morse = MorseCode.new
+	 result = morse.letters_to_morse("hi")
+	 expect(result).to eq %w(.... ..)
+  end
 end
+
