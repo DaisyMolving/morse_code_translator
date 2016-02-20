@@ -43,10 +43,10 @@ describe MorseCode do
 	 expect(result).to eq "--./---"
   end
 
-  it 'should take "go here" and return "--./--- ...././.-./."' do
+  it 'should take "go here" and return "--./---/ /...././.-./."' do
 	 morse = MorseCode.new
 	 result = morse.words_translated("go here")
-	 expect(result).to eq "--./--- ...././.-./."
+	 expect(result).to eq "--./---/ /...././.-./."
   end
 end
 

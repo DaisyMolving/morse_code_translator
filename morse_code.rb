@@ -23,13 +23,14 @@ class MorseCode
 	 morse_pairs = {"a" => ".-", "b" => "-..." , "c" => "-.-.", "d" => "-..", "e" => ".", "f" => "..-.", "g" => "--.", "h" => "....", "i" => "..", "j" => ".---", "k" => "-.-", "l" => ".-..", "m" => "--", "n" => "-.", "o" => "---", "p" => ".--.", "q" => "--.-", "r" => ".-.", "s" => "...", "t" => "-", "u" => "..-", "v" => "...-", "w" => ".--", "x" => "-..-", "y" => "-.--", "z" => "--.."}
 
 	 letters = split_input(input)
+	 print letters
 	 letters.each do |letter|
 		morse_pairs.each do |alpha, dots|
-		  if alpha == letter
-			 changed_letter = morse_pairs[alpha]
-			 morse_dots << changed_letter
+		  if letter == alpha
+			 letter = morse_pairs[alpha]
 		  end
 		end
+		morse_dots << letter
 	 end
 	 morse_dots
   end
