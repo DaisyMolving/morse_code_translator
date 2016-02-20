@@ -54,5 +54,6 @@ describe MorseCode do
 	 result = morse.morse_translated("--./---/ /...././.-./.")
 	 expect(result).to eq "go here"
   end
+
 end
 
