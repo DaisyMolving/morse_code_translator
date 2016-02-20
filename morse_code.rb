@@ -34,4 +34,10 @@ class MorseCode
 	 morse_dots
   end
 
+  def words_translated(input)
+	 morse_dots = letters_to_morse(input)
+	 morse_word = morse_dots.join("/")
+	 morse_word
+  end
+
 end
