@@ -1,5 +1,18 @@
 class MorseCode
 
+  def words_translated(input)
+	 morse_dots = letters_to_morse(input)
+	 morse_word = morse_dots.join("/")
+	 morse_word
+  end
+
+  def morse_translated(input)
+	 alpha_lets = morse_to_letters(input)
+	 alpha_word = alpha_lets.join("")
+	 alpha_word
+  end
+
+  private
   def input_check(input)
 	 if input.is_a? String
 		true
@@ -60,15 +73,4 @@ class MorseCode
 	 morse_dots
   end
 
-  def words_translated(input)
-	 morse_dots = letters_to_morse(input)
-	 morse_word = morse_dots.join("/")
-	 morse_word
-  end
-
-  def morse_translated(input)
-	 alpha_lets = morse_to_letters(input)
-	 alpha_word = alpha_lets.join("")
-	 alpha_word
-  end
 end
