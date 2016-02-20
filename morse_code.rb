@@ -18,4 +18,8 @@ class MorseCode
 	 letters
   end
 
+  def letters_to_morse(input)
+	 %w(.... ..)
+  end
+
 end
